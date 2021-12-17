@@ -1,0 +1,38 @@
+:root {
+  --color-primary: #1d1b67;
+  --color-secondary: #425466;
+  --color-accent-darkgreen: #005661;
+  --color-accent-blue: #3b60bf;
+  --color-bg-main: #fff;
+  --color-bg-blue: #46ccde;
+
+  --fs-xl: 3rem;
+  --fs-500: 2rem;
+  --fs-400: 1.8rem;
+  --fs-300: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: var(--fs-400);
+  color: var(--color-secondary);
+}
+
+h1,
+h2 {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
