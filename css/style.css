@@ -19,6 +19,11 @@
   margin: 0;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -37,11 +42,23 @@ h2 {
   color: var(--color-primary);
 }
 
+p {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link--underlined {
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
 /* Button */
 .btn {
   display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
   color: var(--color-bg-main);
   background-color: var(--color-primary);
   padding: 1em 1.2em;
@@ -75,4 +92,39 @@ h2 {
 
 ::placeholder {
   color: var(--color-secondary);
+}
+
+/* Hero */
+.hero__content {
+  padding: 3rem 0;
+}
+
+.hero__title {
+  margin: 0 0 0.5em;
+}
+.hero__text {
+  margin-bottom: 1em;
+}
+
+.hero__btn-group {
+  display: flex;
+  column-gap: 12vw;
+  align-items: center;
+  margin-bottom: 1.2em;
+}
+
+.hero__disclaimer {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 0.8em;
+}
+
+.hero__disclaimer span {
+  padding-top: 0.2em;
+}
+
+.hero__img {
+  width: 100%;
+  padding: 3.5rem 3rem;
+  background-color: var(--color-bg-blue);
 }
