@@ -22,6 +22,7 @@
 .container {
   width: 90%;
   margin: 0 auto;
+  padding: 3rem 0;
 }
 
 /* Typography */
@@ -95,10 +96,6 @@ a {
 }
 
 /* Hero */
-.hero__content {
-  padding: 3rem 0;
-}
-
 .hero__title {
   margin: 0 0 0.5em;
 }
@@ -127,4 +124,24 @@ a {
   width: 100%;
   padding: 3.5rem 3rem;
   background-color: var(--color-bg-blue);
+}
+
+/* Testimonial */
+.testimonial__title {
+  padding-bottom: 2.5rem;
+}
+
+.avatar-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding-bottom: 3rem;
+}
+
+.avatar-group img {
+  width: 45px;
+}
+
+.testimonial__text + .testimonial__text {
+  padding-top: 3rem;
 }
