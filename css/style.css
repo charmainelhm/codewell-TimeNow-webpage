@@ -8,7 +8,7 @@
 
   --fs-xl: 3rem;
   --fs-500: 2rem;
-  --fs-400: 1.8rem;
+  --fs-400: 1.6rem;
   --fs-300: 1.6rem;
 }
 
@@ -35,4 +35,44 @@ h2 {
   font-size: var(--fs-xl);
   font-weight: 700;
   color: var(--color-primary);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-bg-main);
+  background-color: var(--color-primary);
+  padding: 1em 1.2em;
+  border-radius: 5px;
+  transition: opacity 0.1s ease-out;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+}
+
+/* Input Group */
+.input-group {
+  border: 1.5px solid #a8a9a9;
+  border-radius: 5px;
+  display: flex;
+  padding: 4px;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.input {
+  border: none;
+  outline: 0;
+  color: var(--color-primary);
+  flex-grow: 1;
+  width: 0;
+  padding-left: 2rem;
+}
+
+::placeholder {
+  color: var(--color-secondary);
 }
