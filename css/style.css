@@ -28,6 +28,7 @@
 
 .flex {
   display: flex;
+  flex-direction: column;
 }
 
 /* Typography */
@@ -99,6 +100,47 @@ a {
 
 ::placeholder {
   color: var(--color-secondary);
+}
+
+/* Header Block */
+header.container {
+  padding-bottom: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__toggler {
+  cursor: pointer;
+}
+
+.nav__list {
+  width: 100%;
+  padding-left: 0;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+  padding-top: 2rem;
 }
 
 /* Hero Block*/
@@ -207,7 +249,6 @@ ul[title]::before {
 }
 
 footer .flex {
-  flex-direction: column;
   gap: 1.7rem;
 }
 
