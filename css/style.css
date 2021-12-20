@@ -5,11 +5,12 @@
   --color-accent-blue: #3b60bf;
   --color-bg-main: #fff;
   --color-bg-blue: #46ccde;
+  --color-bg-lightblue: #cdf9ff;
 
   --fs-xl: 3rem;
   --fs-500: 2rem;
   --fs-400: 1.6rem;
-  --fs-300: 1.6rem;
+  --fs-300: 1.5rem;
 }
 
 *,
@@ -49,7 +50,8 @@ p {
 
 a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--color-secondary);
 }
 
 .link--underlined {
@@ -95,7 +97,7 @@ a {
   color: var(--color-secondary);
 }
 
-/* Hero */
+/* Hero Block*/
 .hero__title {
   margin: 0 0 0.5em;
 }
@@ -126,7 +128,7 @@ a {
   background-color: var(--color-bg-blue);
 }
 
-/* Testimonial */
+/* Testimonial Block*/
 .testimonial__title {
   padding-bottom: 2.5rem;
 }
@@ -144,4 +146,28 @@ a {
 
 .testimonial__text + .testimonial__text {
   padding-top: 3rem;
+}
+
+/* Feature Block */
+.block-feature {
+  background: var(--color-bg-lightblue);
+}
+.feature__title {
+  font-size: var(--fs-300);
+  color: var(--color-accent-blue);
+  margin-bottom: 0.5em;
+}
+
+.feature__subtitle {
+  font-size: var(--fs-xl);
+  color: var(--color-accent-darkgreen);
+  margin-bottom: 0.4em;
+}
+
+.feature__text {
+  margin-bottom: 0.8em;
+}
+
+.feature + .feature {
+  margin-top: 5rem;
 }
