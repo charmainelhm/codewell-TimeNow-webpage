@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="container">
-      <nav class="nav collapsible collapsible--expanded">
+      <nav class="nav collapsible">
         <img src="Assets/Logo.svg" alt="TimeNow logo" />
         <img
           class="nav__toggler"
@@ -27,15 +27,15 @@
           alt="Dropdown navigation button"
         />
         <ul class="nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Features</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
           <li class="nav__item">
             <a class="btn" href="#">Start Scheduling</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="block-hero">
+    <div class="block-hero flex flex--row">
       <section class="hero__content container">
         <h1 class="hero__title">Post when your audience is most active.</h1>
         <p class="hero__text">
@@ -44,7 +44,7 @@
         </p>
         <div class="hero__btn-group">
           <a class="btn" href="#">Start Scheduling</a>
-          <a href="#">View Demo</a>
+          <a class="demo-link" href="#">View Demo</a>
         </div>
         <div class="hero__disclaimer">
           <img src="Assets/Shield.svg" alt="Shield icon" />
@@ -54,26 +54,30 @@
           >
         </div>
       </section>
-      <img
-        class="hero__img"
-        src="Assets/Mockup.png"
-        alt="TimeNow user interface"
-      />
+      <div class="img-container">
+        <img
+          class="hero__img"
+          src="Assets/Mockup.png"
+          alt="TimeNow user interface"
+        />
+      </div>
     </div>
 
     <section class="block-testimonial container">
-      <h2 class="testimonial__title">
-        TimeNow is used by the most influential people.
-      </h2>
-      <div class="avatar-group">
-        <img src="Assets/UA1.png" alt="avatar" />
-        <img src="Assets/UA2.png" alt="avatar" />
-        <img src="Assets/UA3.png" alt="avatar" />
-        <img src="Assets/UA4.png" alt="avatar" />
-        <img src="Assets/UA5.png" alt="avatar" />
-        <img src="Assets/UA6.png" alt="avatar" />
-        <img src="Assets/UA7.png" alt="avatar" />
-        <img src="Assets/UA8.png" alt="avatar" />
+      <div class="flex flex--row">
+        <h2 class="testimonial__title">
+          TimeNow is used by the most influential people.
+        </h2>
+        <div class="avatar-group">
+          <img src="Assets/UA1.png" alt="avatar" />
+          <img src="Assets/UA2.png" alt="avatar" />
+          <img src="Assets/UA3.png" alt="avatar" />
+          <img src="Assets/UA4.png" alt="avatar" />
+          <img src="Assets/UA5.png" alt="avatar" />
+          <img src="Assets/UA6.png" alt="avatar" />
+          <img src="Assets/UA7.png" alt="avatar" />
+          <img src="Assets/UA8.png" alt="avatar" />
+        </div>
       </div>
       <p class="testimonial__text">
         The most influential people on Facebook, Twitter, and Instagram are
@@ -115,7 +119,7 @@
 
     <footer class="container">
       <img class="footer__logo" src="Assets/Logo.svg" alt="TimeNow Logo" />
-      <div class="flex flex-footer">
+      <div class="flex flex--row">
         <ul class="footer__list" title="Product">
           <li class="footer__item">
             <a class="footer__link" href="#">Homepage</a>
