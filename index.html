@@ -36,35 +36,39 @@
       </nav>
     </header>
     <div class="block-hero flex flex--row">
-      <section class="hero__content container">
-        <h1 class="hero__title">Post when your audience is most active.</h1>
-        <p class="hero__text">
-          With TimeNow, automatically schedule your posts on Twitter, LinkedIn,
-          and Instagram to post when your followers are most active.
-        </p>
-        <div class="hero__btn-group">
-          <a class="btn" href="#">Start Scheduling</a>
-          <a class="demo-link" href="#">View Demo</a>
-        </div>
-        <div class="hero__disclaimer">
-          <img src="Assets/Shield.svg" alt="Shield icon" />
-          <span
-            >TimeNow does not sell your data.
-            <a class="link--underlined" href="#">Learn more</a></span
-          >
-        </div>
-      </section>
+      <div class="container content-wrapper">
+        <section class="hero__content">
+          <h1 class="hero__title">Post when your audience is most active.</h1>
+          <p class="hero__text">
+            With TimeNow, automatically schedule your posts on Twitter,
+            LinkedIn, and Instagram to post when your followers are most active.
+          </p>
+          <div class="hero__btn-group">
+            <a class="btn" href="#">Start Scheduling</a>
+            <a class="demo-link" href="#">View Demo</a>
+          </div>
+          <div class="hero__disclaimer">
+            <img src="Assets/Shield.svg" alt="Shield icon" />
+            <span
+              >TimeNow does not sell your data.
+              <a class="link--underlined" href="#">Learn more</a></span
+            >
+          </div>
+        </section>
+      </div>
       <div class="img-container">
-        <img
-          class="hero__img"
-          src="Assets/Mockup.png"
-          alt="TimeNow user interface"
-        />
+        <div class="container">
+          <img
+            class="hero__img"
+            src="Assets/Mockup.png"
+            alt="TimeNow user interface"
+          />
+        </div>
       </div>
     </div>
 
     <section class="block-testimonial container">
-      <div class="flex flex--row">
+      <div class="flex">
         <h2 class="testimonial__title">
           TimeNow is used by the most influential people.
         </h2>
@@ -79,17 +83,19 @@
           <img src="Assets/UA8.png" alt="avatar" />
         </div>
       </div>
-      <p class="testimonial__text">
-        The most influential people on Facebook, Twitter, and Instagram are
-        using TweetNow to schedule posts when their followers are most active.
-      </p>
-      <p class="testimonial__text">
-        They generally receive 23% more engagement than people who do not.
-      </p>
+      <div class="testimonial__content">
+        <p class="testimonial__text">
+          The most influential people on Facebook, Twitter, and Instagram are
+          using TweetNow to schedule posts when their followers are most active.
+        </p>
+        <p class="testimonial__text">
+          They generally receive 23% more engagement than people who do not.
+        </p>
+      </div>
     </section>
 
     <div class="block-feature">
-      <div class="container">
+      <div class="container flex">
         <article class="feature">
           <h2 class="feature__title">Unified Dashboard</h2>
           <h3 class="feature__subtitle">
@@ -119,43 +125,47 @@
 
     <footer class="container">
       <img class="footer__logo" src="Assets/Logo.svg" alt="TimeNow Logo" />
-      <div class="flex flex--row">
-        <ul class="footer__list" title="Product">
-          <li class="footer__item">
-            <a class="footer__link" href="#">Homepage</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Pricing</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Features</a>
-          </li>
-        </ul>
-        <ul class="footer__list" title="Help">
-          <li class="footer__item">
-            <a class="footer__link" href="#">Live Chat</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Send Email</a>
-          </li>
-          <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
-        </ul>
-        <ul class="footer__list" title="Company">
-          <li class="footer__item">
-            <a class="footer__link" href="#">About</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Customers</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Blog</a>
-          </li>
-        </ul>
-      </div>
-      <div class="call-out">
-        <div class="input-group">
-          <input type="email" class="input" placeholder="Email Address" />
-          <a class="btn" href="#">Start Scheduling</a>
+      <div class="flex">
+        <div class="flex flex--row">
+          <ul class="footer__list" title="Product">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Homepage</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Features</a>
+            </li>
+          </ul>
+          <ul class="footer__list" title="Help">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Live Chat</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Send Email</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <ul class="footer__list" title="Company">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Customers</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="call-out">
+          <div class="input-group">
+            <input type="email" class="input" placeholder="Email Address" />
+            <a class="btn" href="#">Start Scheduling</a>
+          </div>
         </div>
       </div>
     </footer>
