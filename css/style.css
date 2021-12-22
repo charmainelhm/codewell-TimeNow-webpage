@@ -8,6 +8,7 @@
   --color-bg-lightblue: #cdf9ff;
 
   --fs-xl: 3rem;
+  --fs-600: 3rem;
   --fs-500: 1.8rem;
   --fs-400: 1.6rem;
   --fs-300: 1.5rem;
@@ -32,6 +33,16 @@
   flex-direction: column;
 }
 
+@media screen and (min-width: 900px) {
+  :root {
+    --fs-xl: 4.2rem;
+  }
+
+  .container {
+    padding: 6rem 0;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .flex--row {
     flex-direction: row;
@@ -53,13 +64,21 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: var(--fs-400);
   color: var(--color-secondary);
+  overflow-x: hidden;
 }
 
 h1,
 h2 {
-  font-size: var(--fs-xl);
   font-weight: 700;
   color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+}
+
+h2 {
+  font-size: var(--fs-600);
 }
 
 p {
@@ -228,23 +247,21 @@ header.container {
 }
 
 @media screen and (min-width: 600px) {
-  .block-hero .flex {
-    gap: 2.5rem;
-  }
-
-  .content-wrapper {
-    width: 45%;
-  }
-
-  .hero__content {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .img-container {
-    width: 55%;
-    display: flex;
+  .block-hero {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+  }
+
+  .block-hero .container {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .hero__btn-group {
@@ -258,16 +275,39 @@ header.container {
     align-self: center;
   }
 
-  .img-container::before {
+  .img-container {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .hero__img {
+    padding-left: min(5vw, 70px);
+  }
+
+  .blue-background {
+    position: absolute;
+    background-color: var(--color-bg-blue);
+    width: 100vw;
+    height: 120%;
+    left: 45%;
+    top: -120px;
+    z-index: -1;
+  }
+  /* .img-container::before {
     content: "";
     background-color: var(--color-bg-blue);
     position: absolute;
     top: -200px;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0px;
     height: 100%;
     z-index: -1;
+  } */
+}
+
+@media screen and (min-width: 900px) {
+  .blue-background {
+    height: 110%;
   }
 }
 
@@ -334,7 +374,7 @@ header.container {
 }
 
 .feature__subtitle {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-600);
   color: var(--color-accent-darkgreen);
   margin-bottom: 0.4em;
 }
