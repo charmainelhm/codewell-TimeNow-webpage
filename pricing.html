@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TimeNow - Home</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav collapsible">
+        <img src="Assets/Logo.svg" alt="TimeNow logo" />
+        <img
+          class="nav__toggler"
+          src="Assets/Hamburger Menu.svg"
+          alt="Dropdown navigation button"
+        />
+        <ul class="nav__list collapsible__content">
+          <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
+          <li class="nav__item">
+            <a class="btn" href="#">Start Scheduling</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <footer class="container">
+      <img class="footer__logo" src="Assets/Logo.svg" alt="TimeNow Logo" />
+      <div class="flex">
+        <div class="flex flex--row">
+          <ul class="footer__list" title="Product">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Homepage</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Features</a>
+            </li>
+          </ul>
+          <ul class="footer__list" title="Help">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Live Chat</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Send Email</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <ul class="footer__list" title="Company">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Customers</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="call-out">
+          <div class="input-group">
+            <input type="email" class="input" placeholder="Email Address" />
+            <a class="btn" href="#">Start Scheduling</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
