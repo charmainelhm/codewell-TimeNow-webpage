@@ -140,6 +140,62 @@ a:focus {
   color: var(--color-secondary);
 }
 
+/* Card */
+.card {
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 3rem;
+}
+
+.card__pricing {
+  font-size: var(--fs-600);
+  font-weight: 700;
+  color: black;
+  padding-bottom: 2rem;
+}
+
+.card__pricing::after {
+  content: "/mo";
+  font-size: var(--fs-400);
+  font-weight: 400;
+  color: #a8a8a8;
+}
+
+.card__description {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.card__list {
+  padding: 2rem 0 3rem;
+  line-height: 2.5;
+}
+
+.card__item {
+  list-style-type: none;
+  vertical-align: top;
+}
+
+.card__item::before {
+  content: "";
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  background-image: url(../Assets/Checkmark.svg);
+  background-size: contain;
+  margin-right: 1.5rem;
+  vertical-align: middle;
+}
+
+.card .btn {
+  display: block;
+  text-align: center;
+}
+
+.card + .card {
+  margin-top: 3rem;
+}
+
 /* Header Block */
 header.container {
   padding-bottom: 0;
