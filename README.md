@@ -1,29 +1,49 @@
+# CodeWell - TimeNow Landing Page
 
-# Welcome to Codewell! 👋
+This is a solution to the [TimeNow Landing Page on CodeWell](https://www.codewell.cc/challenges/timenow-landing-page--608d9a7d747bad001532bd70).
 
-Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects. 
+## Table of contents
 
-Free or paid, all templates are high quality and will make great portfolio pieces.
+- [Overview](#overview)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### I've completed the challenge, now what?
+## Overview
 
-We recommend using one of these two websites to deploy your projects
+### Links
 
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
+- Live Site URL: [Click here!](https://elastic-shockley-b0adbb.netlify.app/)
 
-They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
+## My process
 
+### Built with
 
-### Submit your solution to Codewell
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
-Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
+### What I learned
 
-### Join our community on Slack
+- Used Javascript to build a collapsible navigation bar for the webpage
+- Used div element to create partial blue background for the hero section
+- Created a two page project for the first time, linking both pages up
+- Used input element to build a toggle button
+- Learnt how to use child selector to select different element without giving them specific class name
 
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
+### Useful resources
 
-### Fonts Used
+- [Toggle Button Tutorial](https://www.youtube.com/watch?v=xodD0nw2veQ) - Used this tutorial to build the toggle button for the first time.
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Still my go-to reference when building layouts with grid.
+- [MDN Web Docs - grid-template] (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template) - Indepth explanation of how grid-template works.
 
-https://fonts.google.com/specimen/Inter
+## Author
+
+- LinkedIn - [Charmaine Lee](https://www.linkedin.com/in/charmainelee-huimin/)
+- Frontend Mentor - [@charmainelhm](https://www.frontendmentor.io/profile/charmainelhm)
+- Twitter - [@noodercob_ie](https://www.twitter.com/noodercob_ie)
