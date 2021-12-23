@@ -16,7 +16,7 @@ This is a solution to the [TimeNow Landing Page on CodeWell](https://www.codewel
 
 ### Links
 
-- Live Site URL: [Click here!](https://elastic-shockley-b0adbb.netlify.app/)
+- Live Site URL: [Click here!](https://wonderful-lumiere-cae87b.netlify.app)
 
 ## My process
 
@@ -40,7 +40,7 @@ This is a solution to the [TimeNow Landing Page on CodeWell](https://www.codewel
 
 - [Toggle Button Tutorial](https://www.youtube.com/watch?v=xodD0nw2veQ) - Used this tutorial to build the toggle button for the first time.
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Still my go-to reference when building layouts with grid.
-- [MDN Web Docs - grid-template] (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template) - Indepth explanation of how grid-template works.
+- [MDN Web Docs - grid-template](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template) - Indepth explanation of how grid-template works.
 
 ## Author
 
