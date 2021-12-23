@@ -210,8 +210,6 @@ a:focus {
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   padding: 3rem;
-  max-width: 350px;
-  margin: 0 auto;
 }
 
 .card__pricing {
@@ -603,4 +601,31 @@ footer .flex {
 
 .block-pricing .toggler-btn {
   margin-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card + .card {
+    margin-top: 0;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template:
+      "card1 card2" 1fr
+      "card3 card3" 1fr
+      / auto;
+    gap: 4rem;
+  }
+
+  .card:first-child {
+    grid-area: card1;
+  }
+
+  .card:nth-child(2) {
+    grid-area: card2;
+  }
+
+  .card:nth-child(3) {
+    grid-area: card3;
+  }
 }
