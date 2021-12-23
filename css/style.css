@@ -210,6 +210,8 @@ a:focus {
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   padding: 3rem;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .card__pricing {
@@ -581,4 +583,24 @@ footer .flex {
     margin-top: 0;
     flex-basis: 430px;
   }
+}
+
+/* Pricing Section */
+.pricing-header {
+  text-align: center;
+}
+
+.pricing-header__title {
+  color: black;
+  font-size: 5rem;
+  width: 70%;
+  margin: 0 auto 1.5rem;
+}
+
+.pricing-header__subtitle {
+  margin-bottom: 3rem;
+}
+
+.block-pricing .toggler-btn {
+  margin-bottom: 3.5rem;
 }
