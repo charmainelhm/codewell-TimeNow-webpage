@@ -117,15 +117,15 @@ a:focus {
   opacity: 0.8;
 }
 
-/* Toggler Button */
-.toggler-btn {
+/* Toggle Button */
+.toggle-btn {
   text-align: center;
 }
 .checkbox {
   opacity: 0;
   position: absolute;
 }
-.toggler-container {
+.toggle-container {
   display: inline-block;
   width: 60px;
   height: 30px;
@@ -135,11 +135,11 @@ a:focus {
   transition: background-color 0.2s ease-out;
 }
 
-.checkbox:checked + .toggler-container {
+.checkbox:checked + .toggle-container {
   background-color: #286ad4;
 }
 
-.toggler-knob {
+.toggle-knob {
   width: 22px;
   height: 22px;
   background-color: var(--color-bg-main);
@@ -152,7 +152,7 @@ a:focus {
   transition: transform 0.2s ease-out;
 }
 
-.checkbox:checked + .toggler-container .toggler-knob {
+.checkbox:checked + .toggle-container .toggle-knob {
   transform: translateX(29px);
 }
 
@@ -174,11 +174,11 @@ a:focus {
   transition: font-weight 0.1s ease-out;
 }
 
-.checkbox:checked + .toggler-container .label-monthly {
+.checkbox:checked + .toggle-container .label-monthly {
   font-weight: 400;
 }
 
-.checkbox:checked + .toggler-container .label-yearly {
+.checkbox:checked + .toggle-container .label-yearly {
   font-weight: 700;
 }
 
@@ -612,7 +612,7 @@ footer .flex {
   margin-bottom: 3rem;
 }
 
-.block-pricing .toggler-btn {
+.block-pricing .toggle-btn {
   margin-bottom: 3.5rem;
 }
 
