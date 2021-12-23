@@ -308,6 +308,10 @@ header.container {
     gap: 4rem;
   }
 
+  .nav > a {
+    align-self: center;
+  }
+
   .nav__list {
     width: auto;
     flex-grow: 1;
@@ -329,6 +333,12 @@ header.container {
 
   .nav__item:last-of-type {
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header.container {
+    padding-top: 3rem;
   }
 }
 
@@ -630,6 +640,15 @@ footer .flex {
 
   .card:nth-child(3) {
     grid-area: card3;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .btn {
+    margin-top: auto;
   }
 }
 
