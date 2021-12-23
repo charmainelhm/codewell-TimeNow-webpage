@@ -584,6 +584,9 @@ footer .flex {
 }
 
 /* Pricing Section */
+.block-pricing {
+  padding-top: 6rem;
+}
 .pricing-header {
   text-align: center;
 }
@@ -627,5 +630,15 @@ footer .flex {
 
   .card:nth-child(3) {
     grid-area: card3;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .block-pricing {
+    padding-top: 9rem;
+  }
+
+  .pricing-grid {
+    grid-template: "card1 card2 card3" 1fr / auto;
   }
 }
