@@ -117,6 +117,71 @@ a:focus {
   opacity: 0.8;
 }
 
+/* Toggler Button */
+.toggler-btn {
+  text-align: center;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.toggler-container {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #3a84f7;
+  border-radius: 50px;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+}
+
+.checkbox:checked + .toggler-container {
+  background-color: #286ad4;
+}
+
+.toggler-knob {
+  width: 22px;
+  height: 22px;
+  background-color: var(--color-bg-main);
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  transform: translateX(0);
+  transition: transform 0.2s ease-out;
+}
+
+.checkbox:checked + .toggler-container .toggler-knob {
+  transform: translateX(29px);
+}
+
+.label-monthly,
+.label-yearly {
+  position: absolute;
+  white-space: nowrap;
+  top: 4px;
+}
+
+.label-monthly {
+  right: 69px;
+  font-weight: 700;
+  transition: font-weight 0.1s ease-out;
+}
+
+.label-yearly {
+  left: 70px;
+  transition: font-weight 0.1s ease-out;
+}
+
+.checkbox:checked + .toggler-container .label-monthly {
+  font-weight: 400;
+}
+
+.checkbox:checked + .toggler-container .label-yearly {
+  font-weight: 700;
+}
+
 /* Input Group */
 .input-group {
   border: 1.5px solid #a8a9a9;
